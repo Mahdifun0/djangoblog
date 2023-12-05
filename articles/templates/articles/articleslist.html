@@ -13,11 +13,13 @@
 
 <body>
     <h1>Its articles list</h1>
-    {% for article in articles %}
-    <h2><a href="#">{{article.title}}</a></h2>
-    <p>{{article.short}}</p>
-    <p>{{article.date}}</p>
-    {% endfor %}
+    <div class="container">
+        {% for article in articles %}
+        <h2><a href="#">{{article.title}}</a></h2>
+        <p>{{article.short}}</p>
+        <p>{{article.date}}</p>
+        {% endfor %}
+    </div>
 </body>
 
 </html>
