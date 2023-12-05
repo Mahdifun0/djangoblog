@@ -1,0 +1,7 @@
+{
+    "vsintellicode.features.python.deepLearning": "default",
+    "html.suggest.html5": true,
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    }
+}
