@@ -6,7 +6,7 @@
 <h1>Its articles list</h1>
 <div class="container">
     {% for article in articles %}
-    <h2><a href="#">{{article.title}}</a></h2>
+    <h2><a href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a></h2>
     <p>{{article.short}}</p>
     <p>{{article.date}}</p>
     {% endfor %}

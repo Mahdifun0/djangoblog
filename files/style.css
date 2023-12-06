@@ -3,7 +3,7 @@ body {
     background-image: url(stars.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: greenyellow;
+    color: white;
 }
 
 body * {
