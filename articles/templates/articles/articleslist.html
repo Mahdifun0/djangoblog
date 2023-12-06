@@ -1,25 +1,14 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>articles</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static "style.css" %}">
-</head>
+{% block title %}Articles{% endblock title %}
 
-<body>
-    <h1>Its articles list</h1>
-    <div class="container">
-        {% for article in articles %}
-        <h2><a href="#">{{article.title}}</a></h2>
-        <p>{{article.short}}</p>
-        <p>{{article.date}}</p>
-        {% endfor %}
-    </div>
-</body>
-
-</html>
+{% block content %}
+<h1>Its articles list</h1>
+<div class="container">
+    {% for article in articles %}
+    <h2><a href="#">{{article.title}}</a></h2>
+    <p>{{article.short}}</p>
+    <p>{{article.date}}</p>
+    {% endfor %}
+</div>
+{% endblock content %}
